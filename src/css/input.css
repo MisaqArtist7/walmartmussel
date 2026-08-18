@@ -1,1 +1,37 @@
 @import "tailwindcss";
+:root {
+    --MAIN_COLOR: #03491b; /* رنگ اصلی سبز */
+}
+/* تنظیمات اختصاصی برای کانتینر Responsive در Tailwind v4 */
+@layer components {
+.app-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* پدینگ چپ و راست برای موبایل */
+    padding-left: 1rem;   /* 16px */
+    padding-right: 1rem;  /* 16px */
+}
+
+/* پدینگ بیشتر برای تبلت و دسکتاپ */
+@media (min-width: 640px) {
+    .app-container {
+    padding-left: 2rem;  /* 32px */
+    padding-right: 2rem; /* 32px */
+    }
+}
+
+/* حداکثر عرض برای مانیتورهای بزرگ و ۳۲ اینچ (4K) */
+@media (min-width: 1536px) {
+    .app-container {
+    max-width: 1600px; /* جلوگیری از کشیده شدن بیش از حد در مانیتور 32 اینچ */
+    }
+}
+
+/* اختیاری: برای مانیتورهای بسیار عریض (Ultra-Wide / 4K) */
+@media (min-width: 2560px) {
+    .app-container {
+    max-width: 1800px;
+    }
+}
+}

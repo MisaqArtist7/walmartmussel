@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walmart Mussel</title>
+    <title>Walmart Mussel | Premium Wool Tops Since 1951</title>
+    <!-- Tailwind Output & Custom Style -->
+    <link rel="stylesheet" href="dist/css/output.css">
+    <link rel="stylesheet" href="dist/css/app.css">
 </head>
-<body>
-    
+<body class="bg-neutral-50 text-neutral-800 font-sans antialiased selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200/60 transition-all duration-300">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="dist/images/logo.png" alt="Walmart Mussel Logo" class="w-72 h-auto object-contain selection:none">
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-neutral-600">
+                <a href="index.html" class="hover:text-emerald-800 transition-colors">Home</a>
+                <a href="#about" class="hover:text-emerald-800 transition-colors">Origin</a>
+                <a href="#values" class="hover:text-emerald-800 transition-colors">Values</a>
+                <a href="#products" class="hover:text-emerald-800 transition-colors">Enviromental care</a>
+                <a href="#sustainability" class="hover:text-emerald-800 transition-colors">Sheep Welfare</a>
+                <a href="#sustainability" class="hover:text-emerald-800 transition-colors">CSR</a>
+                <a href="#contact" class="px-5 py-2.5 bg-(--MAIN_COLOR) text-white rounded-full transition-colors shadow-sm hover:shadow">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[65vh] min-h-112.5 flex items-center justify-center text-white overflow-hidden">
+        <!-- 1. Background Image with Subtle Zoom Hover -->
+        <img src="dist/images/hero.jpeg" 
+            alt="Wool Tops Production" 
+            class="absolute inset-0 w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out hover:scale-100">
+
+        <!-- 2. Dark Overlay for Contrast -->
+        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/60 to-black/70"></div>
+
+        <!-- 3. Content Box -->
+        <div class="app-container relative z-10 flex flex-col items-center text-center">
+            
+            <!-- Badge (نشان با اصالت) -->
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-6 shadow-sm">
+                <span>Wool Tops Since 1951</span>
+            </span>
+
+            <!-- Main Title -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 max-w-4xl text-balance drop-shadow-md">
+                Manufacturing Premium Wool Tops
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-lg md:text-xl text-neutral-200 max-w-2xl leading-relaxed font-light mb-8">
+                Combining seven decades of tradition with modern ecological standards for the global textile industry.
+            </p>
+
+            <!-- Call to Actions (دکمه‌های تعاملی) -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#products" class="px-7 py-3.5 bg-emerald-700 hover:bg-emerald-600 text-white text-sm font-semibold rounded-xl transition-all shadow-lg hover:shadow-emerald-900/40">
+                    Explore Products
+                </a>
+                <a href="#about" class="px-7 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-semibold rounded-xl transition-all">
+                    Our Heritage
+                </a>
+            </div>
+
+        </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-emerald-800 font-semibold text-sm tracking-widest uppercase">From Generation to Generation</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 leading-tight">Tradition Meets Modern Ecological Standards</h2>
+                <p class="text-neutral-600 leading-relaxed">
+                    After WWII, the late Textile Engineer Frank Mussel came to Germany. Passionate about the wool fibre, Frank began producing wool tops in 1951 after founding Walmart Mussel Co.
+                </p>
+                <p class="text-neutral-600 leading-relaxed">
+                    Today, we combine the experience and tradition of a family business with the flexibility and dynamism of a modern endeavor. We process Uruguayan mulesing-free wool, produced by healthy sheep following the best animal husbandry practices available.
+                </p>
+            </div>
+            <div class="bg-neutral-100 p-8 rounded-3xl border border-neutral-200/80 space-y-4">
+                <div class="text-emerald-800 text-4xl font-serif">“</div>
+                <blockquote class="text-lg font-medium text-neutral-800 italic leading-relaxed">
+                    When you choose to work with us, you are choosing a company that connects nature to garments with high standards of ethical responsibility.
+                </blockquote>
+                <div class="pt-4 border-t border-neutral-200">
+                    <p class="font-bold text-neutral-900">Federico Mussel</p>
+                    <p class="text-sm text-neutral-500">Managing Director of Walmart Mussel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section id="products" class="py-24 bg-neutral-100 border-t border-neutral-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900">Our Signature Products</h2>
+                <p class="text-neutral-600">Totally traceable, renewable, and ecological wool tops compliant with high ethical expectations.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-neutral-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl">MR</div>
+                    <h3 class="text-2xl font-bold text-neutral-900">Magno Real</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        Offers a special type of wool top that guarantees a regular low content of dark and coloured fibres, making it excel in the production of delicate pastel shades.
+                    </p>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-neutral-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-xl">MS</div>
+                    <h3 class="text-2xl font-bold text-neutral-900">Magno Super</h3>
+                    <p class="text-neutral-600 leading-relaxed">
+                        Provides client-ready Superwash wool tops produced directly at our plant, translating directly into significantly lower logistical costs for your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-neutral-900 text-neutral-400 py-16 border-t border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-4">
+                <span class="text-2xl font-bold text-white uppercase tracking-wider">Walmart Mussel</span>
+                <p class="text-sm text-neutral-400 leading-relaxed">
+                    Pioneers in eco-friendly wool top manufacturing and sustainable textile solutions since 1951.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+                    <li><a href="#sustainability" class="hover:text-white transition-colors">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Certifications</h4>
+                <p class="text-sm text-neutral-400">
+                    C2C Certified Material Health Certificate™ at the Gold level.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500">
+            &copy; 1951 - 2026 Walmart Mussel Co. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="dist/js/app.js"></script>
 </body>
 </html>

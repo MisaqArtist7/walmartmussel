@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Mussel | Origen</title>
+    <!-- Tailwind Output & Custom Style -->
+    <link rel="stylesheet" href="dist/css/output.css">
+    <link rel="stylesheet" href="dist/css/app.css">
+</head>
+<body class="bg-neutral-50 text-neutral-800 font-sans antialiased selection:text-(--MAIN_COLOR) selection:bg-(--MAIN_COLOR)/10">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200/60 transition-all duration-300">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <img src="dist/images/logo.png" alt="Walmart Mussel Logo" class="w-72 h-auto object-contain selection:none">
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-neutral-600">
+                <a href="/" class="hover:text-emerald-800 transition-colors">Home</a>
+                <a href="#about" class="hover:text-emerald-800 transition-colors">Origin</a>
+                <a href="#values" class="hover:text-emerald-800 transition-colors">Values</a>
+                <a href="Environmental-Care.html" class="hover:text-emerald-800 transition-colors">Enviromental care</a>
+                <a href="sheep-welfare.html" class="hover:text-emerald-800 transition-colors">Sheep Welfare</a>
+                <a href="#sustainability" class="hover:text-emerald-800 transition-colors">CSR</a>
+                <a href="contact-us.html" class="px-5 py-2.5 bg-(--MAIN_COLOR) text-white rounded-full transition-colors shadow-sm hover:shadow">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[65vh] min-h-112.5 flex items-center justify-center text-white overflow-hidden">
+        <!-- 1. Background Image with Subtle Zoom Hover -->
+        <img src="dist/images/hero.jpeg" 
+            alt="Wool Tops Production" 
+            class="absolute inset-0 w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out hover:scale-100">
+
+        <!-- 2. Dark Overlay for Contrast -->
+        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/60 to-black/60"></div>
+
+        <!-- 3. Content Box -->
+        <div class="app-container relative z-10 flex flex-col items-center text-center">
+            
+            <!-- Badge (نشان با اصالت) -->
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-300 text-xs sm:text-sm font-medium tracking-widest uppercase mb-6 shadow-sm">
+                <span>Wool Tops Since 1951</span>
+            </span>
+
+            <!-- Main Title -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 max-w-4xl text-balance drop-shadow-md">
+                Origen by Walmart Mussel
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-lg md:text-xl text-neutral-200 max-w-2xl leading-relaxed font-light mb-8">
+                Discover the legacy of Walmart Mussel, pioneers in eco-friendly wool top manufacturing and sustainable textile solutions since 1951.
+            </p>
+
+            <!-- Call to Actions (دکمه‌های تعاملی) -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#products" class="px-7 py-3.5 bg-emerald-700 hover:bg-emerald-600 text-white text-sm font-semibold rounded-xl transition-all shadow-lg hover:shadow-emerald-900/40">
+                    Explore Products
+                </a>
+                <a href="#about" class="px-7 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-semibold rounded-xl transition-all">
+                    Our Heritage
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Philosophy / Mission Section -->
+    <section class="py-16 sm:py-24">
+        <div class="max-w-5xl mx-auto text-center space-y-4">
+                <span class="inline-flex items-center gap-2 font-semibold text-xs sm:text-sm tracking-widest uppercase">
+                    <span class="w-8 h-0.5 text-(--MAIN_COLOR)"></span>
+                    Our Philosophy
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 leading-tight">
+                    We believe that high quality can also be achieved through <span class="text-(--MAIN_COLOR)">love and respect</span> for nature and animals.
+                </h2>
+            </div>
+    </section>
+
+    <section class="py-20 sm:py-28 bg-white border-t border-neutral-200">
+        <div class="app-container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Content Column -->
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 text-main font-semibold text-xs sm:text-sm tracking-widest uppercase">
+                        <span class="w-8 h-0.5 bg-main"></span>
+                        Peace of Mind & Certification
+                    </span>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 leading-tight">
+                        A Label You Can <span class="text-main">Trust & Trace</span>
+                    </h2>
+
+                    <p class="text-neutral-600 text-base sm:text-lg leading-relaxed">
+                        This is why we developed our own certification that combines a premium product with the tranquility of knowing that their origin respects and care for animals and the environment.
+                    </p>
+
+                    <div class="p-6 bg-neutral-50 rounded-2xl border border-neutral-200/80">
+                        <p class="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium">
+                            "Every wool top certified under Origen stands for ethical farming, complete supply chain transparency, and a deep commitment to environmental stewardship."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual Card / Image Column -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl bg-neutral-100 aspect-4/3 sm:aspect-16/10 lg:aspect-4/3">
+                        <img src="dist/images/Origen/sheeps.jpg" alt="Natural Sheep Farming in Uruguay" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 text-white space-y-1">
+                            <span class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Natural Habitat</span>
+                            <h3 class="text-lg font-bold">100% Mulesing-Free & Sustainable</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certified Wool Top Values Section -->
+    <section class="py-20 sm:py-28">
+        <div class="app-container max-w-7xl mx-auto px-6">
+            
+            <!-- Section Header -->
+            <div class="max-w-4xl mx-auto text-center space-y-4 mb-12 sm:mb-16">
+                <span class="inline-flex items-center gap-2 text-main font-semibold text-xs sm:text-sm tracking-widest uppercase">
+                    <span class="w-8 h-0.5 bg-main"></span>
+                    Our Core Commitments
+                    <span class="w-8 h-0.5 bg-main"></span>
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 leading-relaxed text-balance">
+                    Each Origin certified wool top is made of wools from a carefully selected group of farms owned by growers who share <span class="text-main">our vision and values:</span>
+                </h2>
+            </div>
+
+            <!-- Features Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                
+                <!-- Card 1: Animal Welfare & Mulesing Free -->
+                <div class="group bg-white p-8 rounded-3xl border border-neutral-200/80 hover:border-main/40 transition-all duration-300 flex flex-col items-start shadow-2xs hover:shadow-md">
+                    <div class="w-12 h-12 mb-6 rounded-2xl bg-main/10 text-main flex items-center justify-center shrink-0 bg-gray-100 group-hover:bg-(--MAIN_COLOR) group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Animal Welfare & Mulesing-Free</h3>
+                    <p class="text-neutral-600 leading-relaxed text-sm">
+                        Genuine love for our sheep that live in accordance with the 5 freedoms and are free of mulesing procedures. Mulesing is not practiced in Uruguay since it is not justified by climatic or sanitary reasons.
+                    </p>
+                </div>
+
+                <!-- Card 2: Eco Manufacturing & Certifications -->
+                <div class="group bg-white p-8 rounded-3xl border border-neutral-200/80 hover:border-main/40 transition-all duration-300 flex flex-col items-start shadow-2xs hover:shadow-md">
+                    <div class="w-12 h-12 mb-6 rounded-2xl bg-main/10 text-main flex items-center justify-center shrink-0 bg-gray-100 group-hover:bg-(--MAIN_COLOR) group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Sustainable Processing</h3>
+                    <p class="text-neutral-600 leading-relaxed text-sm">
+                        Environmental responsibility throughout the entire manufacturing process. We process our wool tops using <strong class="text-neutral-900 font-semibold">98% renewable energy</strong> under Carbon Neutral Certification and OEKO-TEX Certification.
+                    </p>
+                </div>
+
+                <!-- Card 3: Social Responsibility -->
+                <div class="group bg-white p-8 rounded-3xl border border-neutral-200/80 hover:border-main/40 transition-all duration-300 flex flex-col items-start shadow-2xs hover:shadow-md">
+                    <div class="w-12 h-12 mb-6 rounded-2xl bg-main/10 text-main flex items-center justify-center shrink-0 bg-gray-100 group-hover:bg-(--MAIN_COLOR) group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.942 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                        </svg>      
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Community & CSR</h3>
+                    <p class="text-neutral-600 leading-relaxed text-sm">
+                        Social responsibility toward the local towns, families, and all workers and communities involved in our supply chain.
+                    </p>
+                </div>
+
+                <!-- Card 4: Full Traceability -->
+                <div class="group bg-white p-8 rounded-3xl border border-neutral-200/80 hover:border-main/40 transition-all duration-300 flex flex-col items-start shadow-2xs hover:shadow-md">
+                    <div class="w-12 h-12 mb-6 rounded-2xl bg-main/10 text-main flex items-center justify-center shrink-0 bg-gray-100 group-hover:bg-(--MAIN_COLOR) group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>      
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Complete Traceability</h3>
+                    <p class="text-neutral-600 leading-relaxed text-sm">
+                        Fully traceable routes that connect the final consumer back to the exact land and farm where the sheep were lovingly raised.
+                    </p>
+                </div>
+
+                <!-- Card 5: Exceptional Quality (Full Width Spanning 2 Columns) -->
+                <div class="group bg-white md:col-span-2 p-8 sm:p-10 rounded-3xl border border-neutral-200/80 hover:border-main/40 transition-all duration-300 flex flex-col sm:flex-row items-start gap-6 shadow-2xs hover:shadow-md">
+                    <div class="w-12 h-12 rounded-2xl bg-main/10 text-main flex items-center justify-center shrink-0 bg-gray-100 group-hover:bg-(--MAIN_COLOR) group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                        </svg>      
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-neutral-900 mb-2">Uncompromised Quality</h3>
+                        <p class="text-neutral-600 leading-relaxed text-sm">
+                            Exceptional quality achieved through the combination of healthy sheep breeds, technological innovation, and the perfect blend of long-standing experience and passion.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-neutral-900 text-neutral-400 py-16 border-t border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-4">
+                <img src="dist/images/logo-footer.png" alt="" class="w-44 h-auto object-contain"> 
+                <p class="text-sm text-neutral-400 leading-relaxed">
+                    Pioneers in eco-friendly wool top manufacturing and sustainable textile solutions since 1951.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+                    <li><a href="#sustainability" class="hover:text-white transition-colors">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Certifications</h4>
+                <p class="text-sm text-neutral-400">
+                    C2C Certified Material Health Certificate™ at the Gold level.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500">
+            &copy; 1951 - 2026 Walmart Mussel Co. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

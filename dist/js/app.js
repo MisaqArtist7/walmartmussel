@@ -22,6 +22,5 @@ mobileMenuBackdrop?.addEventListener('click', closeMenu); // بهبود UX: بس
 // جایگزین بهینه‌تر برای رویداد resize
 const mediaQuery = window.matchMedia('(min-width: 1022px)');
 mediaQuery.addEventListener('change', (e) => {
-    console.log(e)
     if (e.matches) closeMenu();
 });
